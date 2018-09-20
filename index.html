@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Йога-марга</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">	 
+		<header class="main-header">
+			<p>Управление</p>
+		</header>
+		<section class="main">
+			<aside class="main-nav">
+				<a href=""><img class="main-logo" src="images/design/logo.png" alt=""></a>
+				<nav class="graphite demo-container"> 
+					<ul class="accordion" id="accordion-1">
+						<li class="dcjq-current-parent"><a href=""><img src="images/design/icon-nav1.svg" alt="">Управление</a>
+							<ul>
+								<li><a class="active-link" href="index.html">Учетные записи</a></li>
+								<li><a href="admin-users.html">Управление пользователями</a></li>
+								<li><a href="admin-groups.html">Управление группами</a></li>
+							</ul>							
+						</li>						
+						<li><a href=""><img src="images/design/icon-nav2.svg" alt="">Каталог</a>
+							<ul>
+								<li><a href="">Утренние практики</a></li>
+								<li><a href="">Медитативные практики</a></li>
+								<li><a href="">Вечерние практики</a></li>
+							</ul>
+						</li>
+						<li><a href=""><img src="images/design/icon-nav3.svg" alt="">Оповещения</a>
+							<ul>
+								<li><a href="">Оповещения</a></li>
+								<li><a href="">Архив оповещений</a></li>
+							</ul>
+						</li>
+						<li><a href="support.html"><img src="images/design/icon-nav4.svg" alt="">Поддержка</a></li>
+						<li><a href="exit.html"><img src="images/design/icon-nav5.svg" alt="">Выход</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<section class="main-content">
+				<div class="wrap-content">
+					<div class="head-content">
+						<p>Учетные записи</p>
+					</div>
+					<div class="body-content">
+						<table>
+							<thead>
+								<tr>
+									<td>№</td>
+									<td>Духовное имя</td>
+									<td>ФИО</td>
+									<td>Статус</td>
+									<td>E-mail</td>
+									<td>Телефон</td>
+									<td>Дата регистрации</td>
+									<td>Время использования приложения</td>
+									<td>Группа пользователей</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Сатья</td>
+									<td>Иванова Светлана Сергеевна</td>
+									<td>кандидат в ученики</td>
+									<td>ivanova@gmail.com</td>
+									<td>8(908)123-45-67</td>
+									<td>12.01.2019</td>
+									<td>1 год 3 мес.</td>
+									<td>группа №3</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Сатья</td>
+									<td>Иванова Светлана Сергеевна</td>
+									<td>кандидат в ученики</td>
+									<td>ivanova@gmail.com</td>
+									<td>8(908)123-45-67</td>
+									<td>12.01.2019</td>
+									<td>1 год 3 мес.</td>
+									<td>группа №3</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Сатья</td>
+									<td>Иванова Светлана Сергеевна</td>
+									<td>кандидат в ученики</td>
+									<td>ivanova@gmail.com</td>
+									<td>8(908)123-45-67</td>
+									<td>12.01.2019</td>
+									<td>1 год 3 мес.</td>
+									<td>группа №3</td>
+								</tr>
+							</tbody>	
+						</table>
+					</div>
+				</div>
+			</section>
+		</section>
+		<footer class="main-footer"></footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- aside nav -->
+	<script src='js/jquery.cookie.js'></script>
+	<script src='js/jquery.dcjqaccordion.2.7.min.js'></script>
+	<script>
+		$(document).ready(function($){
+			$('#accordion-1').dcAccordion({
+				eventType: 'click',
+				autoClose: true,
+				saveState: true,
+				disableLink: true,
+				speed: 'slow',
+				showCount: false,
+				autoExpand: true,
+				cookie: 'dcjq-accordion-1',
+				classExpand: 'dcjq-current-parent'
+			});
+		});
+	</script>	
+</body>
+</html>
