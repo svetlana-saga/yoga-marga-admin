@@ -1,1 +1,1 @@
-# yoga-marga-admin
+Админка для приложения Yoga-marga
